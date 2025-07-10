@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyleaMUN 2026 Conference Programme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 12px 12px 0 0;
+        }
+        .header img {
+            max-height: 80px;
+            margin-right: 1rem;
+            border-radius: 8px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+        }
+        .day-section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        .day-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #a0aec0;
+            padding-bottom: 0.5rem;
+        }
+        .day-section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+        .location {
+            font-size: 0.95rem;
+            color: #555;
+            font-style: italic;
+            flex-grow: 1;
+            min-width: 0;
+            font-weight: bold;
+        }
+        .event-item {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: flex-start;
+        }
+        .event-time {
+            font-weight: 600;
+            color: #4a5568;
+            flex-shrink: 0;
+            width: 170px;
+            padding-right: 1rem;
+            white-space: nowrap;
+        }
+        .event-description {
+            flex-grow: 1;
+            color: #333;
+        }
+        .note {
+            margin-top: 2.5rem;
+            padding: 1.5rem;
+            background-color: #e0f2f7;
+            border-left: 5px solid #3182ce;
+            border-radius: 8px;
+            color: #2c5282;
+            font-style: italic;
+        }
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #718096;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-radius: 0 0 12px 12px;
+        }
+        .footer img {
+            max-height: 40px;
+            margin-left: 0.5rem;
+            border-radius: 4px;
+        }
+        .download-button-container {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .download-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                margin: 0;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .download-button-container {
+                display: none;
+            }
+            @page {
+                size: A4;
+                margin: 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="program-content">
+        <header class="header">
+            <img src="logo.png" alt="PyleaMUN Logo" onerror="this.onerror=null;this.src='https://placehold.co/80x80/cccccc/333333?text=Logo';" class="rounded-lg">
+            <h1>PyleaMUN 2026 Conference Programme</h1>
+        </header>
+
+        <main>
+            <section class="day-section">
+                <div class="day-header">
+                    <h2>Thursday, January 22nd, 2026</h2>
+                    <p class="location">Saint Gregorios Palamas foundation, 65th N.Plastira Str., 54250 Thessaloniki, Greece</p>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">4:30 PM - 5:00 PM</div>
+                    <div class="event-description">Registration</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">5:00 PM - 7:30 PM</div>
+                    <div class="event-description">Opening Ceremony / Ambassador Speeches</div>
+                </div>
+            </section>
+
+            <section class="day-section">
+                <div class="day-header">
+                    <h2>Friday, January 23rd, 2026</h2>
+                    <p class="location">1st Middle School of Pylea, 4 Isminis Str., 55535 Pylaia, Thessaloniki</p>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">9:00 AM - 9:30 AM</div>
+                    <div class="event-description">Arrivals</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">9:30 AM - 11:30 AM</div>
+                    <div class="event-description">All Committees in Session</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">11:30 AM - 12:00 PM</div>
+                    <div class="event-description">Break</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">12:00 PM - 2:00 PM</div>
+                    <div class="event-description">All Committees in Session</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">2:00 PM - 3:00 PM</div>
+                    <div class="event-description">Lunch Break</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">3:00 PM - 3:30 PM</div>
+                    <div class="event-description">Photos</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">3:30 PM - 5:30 PM</div>
+                    <div class="event-description">All Committees in Session</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">5:30 PM - 6:00 PM</div>
+                    <div class="event-description">Break</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">6:00 PM - 8:00 PM</div>
+                    <div class="event-description">All Committees in Session</div>
+                </div>
+            </section>
+
+            <section class="day-section">
+                <div class="day-header">
+                    <h2>Saturday, January 24th, 2026</h2>
+                    <p class="location">Saint Gregorios Palamas foundation, 65th N.Plastira Str., 54250 Thessaloniki, Greece</p>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">9:00 AM - 9:30 AM</div>
+                    <div class="event-description">Arrivals</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">9:30 AM - 11:00 AM</div>
+                    <div class="event-description">G.A Work</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">11:00 AM - 11:30 AM</div>
+                    <div class="event-description">Break</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">11:30 AM - 1:00 PM</div>
+                    <div class="event-description">G.A Work</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">1:00 PM - 2:00 PM</div>
+                    <div class="event-description">Lunch Break</div>
+                </div>
+                <div class="event-item">
+                    <div class="event-time">2:00 PM - 4:00 PM</div>
+                    <div class="event-description">Closing Ceremony / Awards</div>
+                </div>
+            </section>
+
+            <aside class="note">
+                <strong>Note:</strong> The school canteen will be open on Friday, and students will have to pay for their own meals.
+            </aside>
+        </main>
+
+        <div class="download-button-container">
+            <button id="downloadPdfBtn" class="download-button">Download as PDF</button>
+        </div>
+
+        <footer class="footer">
+            <span>PyleaMUN 2026 - The Organising Committee</span>
+            <img src="blue.png" alt="Blue Logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/add8e6/000000?text=Blue';" class="rounded-md">
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('downloadPdfBtn').addEventListener('click', function() {
+            // Remove the button before printing
+            this.style.display = 'none';
+            
+            // Use the browser's print functionality
+            window.print();
+            
+            // Show the button again after a short delay
+            setTimeout(() => {
+                this.style.display = 'inline-block';
+            }, 500);
+        });
+
+        // Add event listener for after printing
+        window.addEventListener('afterprint', function() {
+            document.getElementById('downloadPdfBtn').style.display = 'inline-block';
+        });
+    </script>
+</body>
+</html>
